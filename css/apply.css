@@ -12,7 +12,7 @@ div.box{
 	font-family: 幼圆;	
 }
 .input{
-	margin-top: 100px;
+	margin-top: 40px;
 	font-size: 1.3em;
 }
 .box .input ul{
@@ -22,8 +22,8 @@ div.box{
 	padding-top: 20px;
 }
 input{
-	min-width: 14%;
-	height: 28px;
+	width: 40%;
+	height: 32px;
 	border-radius: 5px;
 	border-top: 1px solid #ffffff;
 	border-left: 7px solid #ffffff;
@@ -42,5 +42,5 @@ textarea{
 	
 }
 button{
-	width: 20%;
+	width: 40%;
 }
