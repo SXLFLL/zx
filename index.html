@@ -1,39 +1,55 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
 	<link rel="stylesheet" type="text/css" href="css/apply.css">
 	<title>宏奕工作室招新啦！</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="/css/styles.css">
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/snow.js"></script>
+	<script src="js/hy.js"></script>
+	<!-- <script src="js/hy.js"></script> -->
 	<script>createSnow('', 60);</script>
 </head>
 <body>
 <div class="box">
 	<div class="container">
 		<div class="row">
+		<!-- <h1 style="color: #ffffff; font-weight: bold;">宏奕工作室欢迎你</h1> -->
+		<!-- <img src="../img/hy.jpg" style="width: 100%; height: auto;"> -->
 		<form>
 			<!-- <div class="col-xs-6 col-sm-6 col-md-4"> -->
 				
 			<!-- </div> -->
 			<!-- <div class="col-xs-4 col-sm-4 col-md-2"> -->
 				<div class="input">
-				<h1>宏奕工作室报名网站</h1>
 				<ul>
-					<li><p> &nbsp姓&nbsp 名：</p><input type="text" name="" placeholder="姓名"></li>
-					<li><p> &nbsp学&nbsp 号：</p><input type="text" name="" placeholder="学号"></li>
-					<li><p> &nbsp性&nbsp 别：</p><input type="text" name="" placeholder="性别"></li>
-					<li><p> &nbsp班&nbsp 级：</p><input type="text" name="" placeholder="班级"></li>
+					<li> &nbsp;姓&nbsp; 名：<input type="text" name=""  姓名" class="a"></li>
+					<li> &nbsp;学&nbsp; 号：<input type="text" name=""  学号" class="a"></li>
+					<li  class="b"> &nbsp;性&nbsp; 别：
+						<label>
+							<input name="sex" type="radio">男
+						</label>
+
+						<label>
+							<input name="sex" type="radio" >女
+						</label>
+					</li>
+					<li> 班&nbsp 级：<input type="text" name="" class="a"></li>
+					<li> 电&nbsp; 话：<input type="text" name=""  class="a"></li>
+					<li> &nbsp;Q&nbsp;&nbsp; Q：&nbsp;<input type="text" name="" class="a"></li>
 					<li><p> &nbsp对大学四年的规划：</p>
-						<textarea placeholder="写下你的规划..."></textarea>
+						<textarea  placeholder="写下你的规划..." id="textarea"></textarea>
 					</li>
 					<li><p> &nbsp为什么报名宏奕：</p>
-						<textarea placeholder="写下你的想法..."></textarea>
+						<textarea placeholder="写下你的想法..." id="textarea1"></textarea>
 					</li>
 					<li><p> &nbsp报名之后有什么计划：</p>
-						<textarea placeholder="写下你的计划..."></textarea>
+						<textarea placeholder="写下你的计划..." id="textarea2"></textarea>
 					</li>
 					<li><button type="submit" class="btn btn-default">报名</button>
 					</li>
@@ -44,9 +60,19 @@
 		</div>
 	</div>
 </div>
-<div style="text-align:center;clear:both"><br>
+<div class="x"><br>
 <p>宏奕工作室欢迎你的加入</p><br>
 <p>友情链接：<a href="http://www.codering.cn"">宏奕工作室官网</a></p><br>
 </div>
+
+<script> 
+        var text = document.getElementById("textarea");
+        var text1 = document.getElementById("textarea1");
+        var text2 = document.getElementById("textarea2");
+        autoTextarea(text);// 调用
+        autoTextarea(text1);// 调用
+        autoTextarea(text2);// 调用
+    </script>
+
 </body>
 </html>
